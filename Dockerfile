@@ -45,6 +45,9 @@ RUN yum install -y \
     which \
     vim \
     man \
+    libXmu \
+    openjpeg \
+    giflib \
     mesa-libGL-devel \
     mesa-libGLU-devel
 
