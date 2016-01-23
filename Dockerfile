@@ -12,6 +12,7 @@ RUN yum update -y && yum groupinstall -y "Development Tools" && yum install -y \
       wget \
       tar \
       bzip2 \
+      which \
       nano
  
 # Download and unpack distribution first; Docker's caching
