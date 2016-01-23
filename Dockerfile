@@ -10,7 +10,9 @@ RUN yum update -y && yum install -y \
       groupinstall "Development Tools" \
       zlib-devel \
       glibc-devel.i686 \
-      wget
+      wget \
+      tar \
+      nano
  
 # Download and unpack distribution first; Docker's caching
 # mechanism will ensure that this only happens once.
