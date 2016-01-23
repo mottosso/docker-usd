@@ -28,7 +28,12 @@ And a useful alias, such that when you enter `usd`, you'll enter a bash-shell wi
 ```bash
 $ alias usd="docker run -ti -h usd --rm -v $(pwd):/home/root mottosso/usd"
 $ usd
-[root@usd root]# []
+[root@usd root]# pypix
+Python 2.7.5 (default, Sep 22 2015, 13:38:15)
+[GCC 4.8.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from pxr import Usd
+>>>
 ```
 
 This will download and run the latest image of USD.
