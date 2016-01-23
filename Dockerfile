@@ -43,10 +43,12 @@ RUN mkdir ~/Downloads && \
 # temp
 RUN yum install -y \
     which \
-    vim
+    vim \
+    man
 
 # Initialise USD environment
 RUN echo ". /opt/pixar/usd/bin/activate.sh" >> ~/.bashrc
 
 # Finalise
 WORKDIR /root
+ENTRYPOINT ["bash"]
