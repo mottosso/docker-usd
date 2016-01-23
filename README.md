@@ -23,12 +23,26 @@ Some explanation of flags.
 -v   = Mount your current working to the current working directory of the client.
 ```
 
-And a useful alias, such that when you enter `usd`, you'll enter a bash-shell with your current working directory without typing too much.
+**Aliases**
+
+Enter bash from your current working directory without typing too much.
 
 ```bash
 $ alias usd="docker run -ti -h usd --rm -v $(pwd):/home/root mottosso/usd"
 $ usd
 [root@usd root]# pypix
+Python 2.7.5 (default, Sep 22 2015, 13:38:15)
+[GCC 4.8.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from pxr import Usd
+>>>
+```
+
+Or enter `pypix` immediately.
+
+```bash
+$ alias pypix="docker run -ti -h usd --rm -v $(pwd):/home/root mottosso/usd bash --login -c pypix"
+$ pypix
 Python 2.7.5 (default, Sep 22 2015, 13:38:15)
 [GCC 4.8.2] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
