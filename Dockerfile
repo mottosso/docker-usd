@@ -50,4 +50,4 @@ RUN yum install -y \
 RUN echo ". /opt/pixar/usd/bin/activate.sh" >> ~/.bashrc
 
 # Finalise
-WORKDIR /root
+WORKDIR /home/root
