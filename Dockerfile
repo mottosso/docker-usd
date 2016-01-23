@@ -12,6 +12,7 @@ RUN yum update -y && yum install -y \
       glibc-devel.i686 \
       wget \
       tar \
+      bzip2 \
       nano
  
 # Download and unpack distribution first; Docker's caching
@@ -35,9 +36,9 @@ RUN mkdir ~/Downloads && \
       tar -xvf ~/Downloads/binutils.tgz -C ~/Downloads && \
       tar -xvf ~/Downloads/gcc.tgz      -C ~/Downloads && \
       tar -xvf ~/Downloads/mpfr.tgz     -C ~/Downloads && \
-      tar -xvf ~/Downloads/gmp.bz2      -C ~/Downloads && \
       tar -xvf ~/Downloads/mpc.tgz      -C ~/Downloads && \
       tar -xvf ~/Downloads/db4.tgz      -C ~/Downloads && \
+      bzip2 -d ~/Downloads/gmp.bz2      -C ~/Downloads && \
     /opt/pixar/usd/bin/build_deps.sh ~/Downloads
 
 # Initialise USD environment
