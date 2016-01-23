@@ -12,7 +12,7 @@ $ docker build -t mottosso/usd https://github.com/mottosso/docker-usd.git
 $ docker run -ti -h usd --rm -v $(pwd):/home/root mottosso/usd
 ```
 
-Building takes about an hour on a fast machine and occupies 7.9 gb of disk space; but you'll only need to do it once.
+Building takes about an hour on a fast machine and occupies **7.9 gb of disk space**; but you'll only need to do it once.
 
 Some explanation of flags.
 
@@ -49,11 +49,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> from pxr import Usd
 >>>
 ```
-
-This will download and run the latest image of USD.
-
-Images occupy around **5 gb** of virtual disk space once installed, and about 
-**500 mb** of bandwidth to download.
 
 # What's in this image?
 
