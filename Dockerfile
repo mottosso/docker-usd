@@ -16,7 +16,7 @@ RUN yum update -y && yum install -y \
 # mechanism will ensure that this only happens once.
 RUN wget http://graphics.pixar.com/usd/files/usd-20151216.tar.gz -O usd.tgz && \
     wget http://graphics.pixar.com/usd/files/deps-vfx2015.tar.gz -O usd-deps.tgz && \
-    mkdir -r /opt/pixar && \
+    mkdir /opt/pixar && \
       tar -xvf usd.tgz -C /opt/pixar/ && \
       tar -xvf usd-deps.tgz -C /opt/pixar/ && \
     rm usd.tgz && \
