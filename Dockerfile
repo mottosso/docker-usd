@@ -40,7 +40,7 @@ RUN mkdir ~/Downloads && \
       tar -jxf ~/Downloads/gmp.bz2      -C ~/Downloads && \
     /opt/pixar/usd/bin/build_deps.sh ~/Downloads
 
-# temp
+# Additional dependencies
 RUN yum install -y \
     which \
     vim \
@@ -51,4 +51,3 @@ RUN echo ". /opt/pixar/usd/bin/activate.sh" >> ~/.bashrc
 
 # Finalise
 WORKDIR /root
-ENTRYPOINT ["bash"]
