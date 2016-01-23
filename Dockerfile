@@ -12,7 +12,6 @@ RUN yum update -y && yum groupinstall -y "Development Tools" && yum install -y \
       wget \
       tar \
       bzip2 \
-      which \
       nano
  
 # Download and unpack distribution first; Docker's caching
@@ -40,6 +39,9 @@ RUN mkdir ~/Downloads && \
       tar -xvf ~/Downloads/db4.tgz      -C ~/Downloads && \
       tar -jxf ~/Downloads/gmp.bz2      -C ~/Downloads && \
     /opt/pixar/usd/bin/build_deps.sh ~/Downloads
+
+# temp
+RUN yum install -y which
 
 # Initialise USD environment
 RUN echo ". /opt/pixar/usd/bin/activate.sh" >> ~/.bashrc
