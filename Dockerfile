@@ -44,7 +44,8 @@ RUN mkdir ~/Downloads && \
 RUN yum install -y \
     which \
     vim \
-    man
+    man \
+    mesa-libGL-10.4.3-1.el6.i686
 
 # Initialise USD environment
 RUN echo ". /opt/pixar/usd/bin/activate.sh" >> ~/.bashrc
