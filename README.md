@@ -5,14 +5,14 @@ For more information about this image and its history, please see its the
 
 # Usage
 
-To use this image and any of it's supported tags, use `docker run`.
+To use this image, use `docker build` followed by `docker run`.
 
 ```bash
 $ docker build -t mottosso/usd https://github.com/mottosso/docker-usd.git
 $ docker run -ti -h usd --rm -v $(pwd):/home/root mottosso/usd
 ```
 
-Building takes about an hour on a fast machine, but you will only have to do it once.
+Building takes about an hour on a fast machine and occupies 7.9 gb of disk space, but you will only have to do it once.
 
 Some explanation of flags.
 
