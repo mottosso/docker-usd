@@ -40,4 +40,4 @@ Images occupy around **5 gb** of virtual disk space once installed, and about
 
 This image builds on the original [centos:6.7][] image
 
-[centos:6.7]: 
+[centos:6.7]: https://github.com/CentOS/sig-cloud-instance-images/blob/d0b72df83f49da844f88aabebe3826372f675370/docker/Dockerfile
