@@ -47,6 +47,11 @@ RUN yum install -y \
     man \
     mesa-libGL-10.4.3-1.el6.i686
 
+RUN yum install -y \
+    mesa-utils
+
+ENV LIBGL_DEBUG verbose
+
 # Initialise USD environment
 RUN echo ". /opt/pixar/usd/bin/activate.sh" >> ~/.bashrc
 
