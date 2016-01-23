@@ -23,7 +23,7 @@ RUN wget http://graphics.pixar.com/usd/files/usd-20151216.tar.gz -O usd.tgz && \
     rm usd-deps.tgz
 
 # Build dependencies; takes a long time.
-RUN mkdir -r ~/Downloads && \
+RUN mkdir ~/Downloads && \
     wget https://ftp.gnu.org/gnu/binutils/binutils-2.24.tar.gz  -O ~/Downloads/binutils.tgz && \
     wget https://ftp.gnu.org/gnu/gcc/gcc-4.8.2/gcc-4.8.2.tar.gz -O ~/Downloads/gcc.tgz && \
     wget http://www.mpfr.org/mpfr-3.1.2/mpfr-3.1.2.tar.gz       -O ~/Downloads/mpfr.tgz && \
