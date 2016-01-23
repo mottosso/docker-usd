@@ -41,7 +41,9 @@ RUN mkdir ~/Downloads && \
     /opt/pixar/usd/bin/build_deps.sh ~/Downloads
 
 # temp
-RUN yum install -y which
+RUN yum install -y \
+    which \
+    vim
 
 # Initialise USD environment
 RUN echo ". /opt/pixar/usd/bin/activate.sh" >> ~/.bashrc
