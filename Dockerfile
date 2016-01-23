@@ -45,10 +45,8 @@ RUN yum install -y \
     which \
     vim \
     man \
-    mesa-libGL-10.4.3-1.el6.i686
-
-RUN yum install -y \
-    mesa-utils
+    mesa-libGL-devel \
+    mesa-libGLU-devel
 
 ENV LIBGL_DEBUG verbose
 
