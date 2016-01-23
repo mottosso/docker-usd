@@ -5,6 +5,13 @@ FROM centos:6.7
  
 MAINTAINER marcus@abstractfactory.io
  
+# Install dependencies
+RUN yum update -y && yum install -y \
+      groupinstall "Development Tools" \
+      zlib-devel \
+      glibc-devel.i686 \
+      wget
+ 
 # Download and unpack distribution first; Docker's caching
 # mechanism will ensure that this only happens once.
 RUN wget http://graphics.pixar.com/usd/files/usd-20151216.tar.gz -O usd.tgz && \
