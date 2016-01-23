@@ -38,7 +38,7 @@ RUN mkdir ~/Downloads && \
       tar -xvf ~/Downloads/mpfr.tgz     -C ~/Downloads && \
       tar -xvf ~/Downloads/mpc.tgz      -C ~/Downloads && \
       tar -xvf ~/Downloads/db4.tgz      -C ~/Downloads && \
-      bzip2 -d ~/Downloads/gmp.bz2      -C ~/Downloads && \
+      tar -jxf ~/Downloads/gmp.bz2      -C ~/Downloads && \
     /opt/pixar/usd/bin/build_deps.sh ~/Downloads
 
 # Initialise USD environment
