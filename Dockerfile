@@ -6,8 +6,7 @@ FROM centos:6.7
 MAINTAINER marcus@abstractfactory.io
  
 # Install dependencies
-RUN yum update -y && yum install -y \
-      groupinstall "Development Tools" \
+RUN yum update -y && yum groupinstall "Development Tools" && yum install -y \
       zlib-devel \
       glibc-devel.i686 \
       wget \
