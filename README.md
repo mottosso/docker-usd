@@ -12,6 +12,8 @@ $ docker build -t mottosso/usd https://github.com/mottosso/docker-usd.git
 $ docker run -ti -h usd --rm -v $(pwd):/home/root mottosso/usd
 ```
 
+- See [EULA](http://graphics.pixar.com/usd/usdDownload.html)
+
 Building takes about an hour on a fast machine and occupies **7.9 gb of disk space**; but you'll only need to do it once.
 
 Some explanation of flags.
