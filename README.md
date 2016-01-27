@@ -14,15 +14,15 @@ $ docker run -ti -h usd --rm -v $(pwd):/home/root mottosso/usd
 
 - See [EULA](http://graphics.pixar.com/usd/usdDownload.html)
 
-Building takes about an hour on a fast machine and occupies **7.9 gb of disk space**; but you'll only need to do it once.
+Building takes about an hour or more on a fast machine and occupies **7.9 gb of disk space**; but you'll only need to do it once.
 
 Some explanation of flags.
 
 ```bash
 -ti  = Run in interactive mode.
--h   = Set the hostname of the Docker client.
+-h   = Set the hostname of the Docker client (for a shorter cli prefix).
 --rm = Once you exit, remove this client.
--v   = Mount your current working to the current working directory of the client.
+-v   = Mount your current working directory to the current working directory of the client.
 ```
 
 **Aliases**
