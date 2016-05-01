@@ -1,4 +1,4 @@
-For more information about this image and its history, please see its the 
+For more information about this image and its history, please see the 
 [GitHub repository][1].
 
 [1]: https://github.com/mottosso/docker-usd
