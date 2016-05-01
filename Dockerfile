@@ -16,7 +16,7 @@ RUN yum update -y && yum groupinstall -y "Development Tools" && yum install -y \
  
 # Download and unpack distribution first; Docker's caching
 # mechanism will ensure that this only happens once.
-RUN wget http://graphics.pixar.com/usd/files/usd-20151216.tar.gz -O usd.tgz && \
+RUN wget http://graphics.pixar.com/usd/files/usd-20160420.tar.gz -O usd.tgz && \
     wget http://graphics.pixar.com/usd/files/deps-vfx2015.tar.gz -O usd-deps.tgz && \
     mkdir /opt/pixar && \
       tar -xvf usd.tgz -C /opt/pixar/ && \
